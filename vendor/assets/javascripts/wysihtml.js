@@ -4359,7 +4359,7 @@ wysihtml5.polyfills(window, document);
             win = null;
         });
     });
-    
+
 
     /*----------------------------------------------------------------------------------------------------------------*/
 
@@ -13913,6 +13913,43 @@ wysihtml5.Commands = Base.extend(
   };
 
 }(wysihtml5));
+;(function(wysihtml5) {
+
+  var nodeOptions = {
+    nodeName: "H1",
+    toggle: true
+  };
+
+  wysihtml5.commands.h1 = {
+    exec: function(composer, command) {
+      wysihtml5.commands.formatInline.exec(composer, command, nodeOptions);
+    },
+
+    state: function(composer, command) {
+      return wysihtml5.commands.formatInline.state(composer, command, nodeOptions);
+    }
+  };
+
+}(wysihtml5));
+(function(wysihtml5) {
+
+  var nodeOptions = {
+    nodeName: "H2",
+    toggle: true
+  };
+
+  wysihtml5.commands.h2 = {
+    exec: function(composer, command) {
+      wysihtml5.commands.formatInline.exec(composer, command, nodeOptions);
+    },
+
+    state: function(composer, command) {
+      return wysihtml5.commands.formatInline.state(composer, command, nodeOptions);
+    }
+  };
+
+}(wysihtml5));
+
 ;(function(wysihtml5) {
 
   var nodeOptions = {

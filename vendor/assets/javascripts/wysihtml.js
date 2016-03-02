@@ -13931,7 +13931,7 @@ wysihtml5.Commands = Base.extend(
   };
 
 }(wysihtml5));
-(function(wysihtml5) {
+;(function(wysihtml5) {
 
   var nodeOptions = {
     nodeName: "H2",
@@ -13949,7 +13949,6 @@ wysihtml5.Commands = Base.extend(
   };
 
 }(wysihtml5));
-
 ;(function(wysihtml5) {
 
   var nodeOptions = {

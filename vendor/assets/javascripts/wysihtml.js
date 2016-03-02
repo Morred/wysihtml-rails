@@ -13920,7 +13920,7 @@ wysihtml5.Commands = Base.extend(
     toggle: true
   };
 
-  wysihtml5.commands.h1 = {
+  wysihtml5.commands.title_h1 = {
     exec: function(composer, command) {
       wysihtml5.commands.formatInline.exec(composer, command, nodeOptions);
     },
@@ -13938,7 +13938,7 @@ wysihtml5.Commands = Base.extend(
     toggle: true
   };
 
-  wysihtml5.commands.h2 = {
+  wysihtml5.commands.title_h2 = {
     exec: function(composer, command) {
       wysihtml5.commands.formatInline.exec(composer, command, nodeOptions);
     },
